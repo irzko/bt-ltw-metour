@@ -3,34 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>MeTour</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="header__logo">MeTour</h1>
+        <a class="header__logo" href="home.html">MeTour</a>
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item">
-                    <a href="home.html">TRANG CHỦ</a>
+                    <a href="home.html">Trang chủ</a>
                 </li>
                 <li class="nav__item">
-                    <a href="explore.html">KHÁM PHÁ</a>
+                    <a href="explore.html">Khám phá</a>
                 </li>
-                <li class="nav__item">CỘNG ĐỒNG</li>
-                <li class="nav__item">VỀ CHÚNG TÔI</li>
-                <li class="nav__item">LIÊN HỆ</li>
+                <li class="nav__item">Cộng đồng</li>
+                <li class="nav__item">Về chúng tôi</li>
+                <li class="nav__item">Liên hệ</li>
             </ul>
         </nav>
     </header>
     <main>
-        <div class="cover">
-            <div class="cover__pading-top"></div>
-            <img class="cover__img" src="assets/banner.svg"></img>
-            <h2 class="cover__title">Khám phá những địa điểm thú vị cùng với MeTour</h2>
+        <div class="banner">
+            <img class="banner__img" src="assets/travel.svg">
+            <div class="slogan">
+                <h2 class="slogan__text">Khám phá những địa điểm thú vị cùng MeTour</h2>
+                <button class="btn slogan__btn">Khám phá ngay</button>
+            </div>
         </div>
-
+        <div class="description">Giới thiệu</div>
     </main>
 </body>
 </html>
