@@ -67,6 +67,9 @@ main {
 
 .banner__img {
     width: 70%;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
 
 .slogan {
@@ -88,7 +91,7 @@ main {
     font-size: 1.3rem;
     color: var(--text-color);
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
 }
 
@@ -111,7 +114,7 @@ main {
     height: 30px;
     opacity: 0;
     animation-name: fade;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     width: 150px;
 }
