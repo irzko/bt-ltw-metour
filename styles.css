@@ -5,12 +5,27 @@
 
 body {
     margin: 0;
+    /* background-color: whitesmoke; */
+}
+
+h2, h4 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    font-family: var(--font);
+    color: var(--text-color);
 }
 
 .header {
     display: flex;
+    background-color: #f2f6fcec;
     justify-content: space-between;
-    box-shadow: 0 2px 4px 0 #969696b1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    /* box-shadow: 0 2px 4px 0 #969696b1; */
 }
 
 
@@ -61,7 +76,7 @@ main {
     display: flex;
     grid-area: banner;
     flex-wrap: wrap;
-    margin: 10px 0;
+    margin: 30px 0;
     justify-content: center;
 }
 
@@ -136,4 +151,85 @@ main {
     height: 300px;
     background-color: #8a9edd;
 
+}
+
+.featured-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.featured-posts__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 20px 12px;
+    box-shadow: 0 1px 4px 0 #969696b1;
+    border-radius: 10px;
+    width: 550px;
+    height: auto;
+}
+
+.main-img {
+    border-radius: 10px 10px 0 0;
+}
+
+.main-title {
+    margin: 20px 10px;
+}
+
+.featured-posts__sub {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 12px;
+}
+
+
+
+.sub-post--1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0;
+}
+
+.sub-post__img {
+    height: 150px;
+    border-radius: 10px;
+}
+
+
+.fea-sub-post__title {
+    margin-left: 10px;
+    width: 300px;
+    text-transform: lowercase;
+}
+
+@media (max-width: 800px) {
+    .banner {
+        margin-top: 80px;
+    }
+    .sub-post__img {
+        width: 100%;
+        height: auto;
+    }
+
+    .featured-posts__main {
+        width: auto;
+        height: auto;
+    }
+
+    .featured-posts__sub {
+        margin: 0 12px;
+    }
+
+    .fea-sub-post__title {
+        width: auto;
+        margin-left: 0px;
+    }
+    
+    .main-img {
+        width: 100%;
+        height: auto;
+    }
 }
