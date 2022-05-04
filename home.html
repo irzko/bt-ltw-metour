@@ -3,16 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>MeTour</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
     <header class="header">
-        <a class="header__logo" href="home.html">MeTour</a>
-        <nav class="nav">
+        <div class="home">
+            <span class="home__menu material-symbols-rounded" onclick="navBar()">
+                menu
+                </span>
+            <a class="home__logo" href="home.html">MeTour</a>
+        </div>
+        <nav class="nav" id="nav-container">
             <a class="nav__item" href="home.html">Trang chủ</a>
             <a class="nav__item" href="explore.html">Khám phá</a>
             <a class="nav__item" href="#">Cộng đồng</a>
@@ -28,11 +35,21 @@
                 <button class="btn slogan__btn">Khám phá ngay</button>
             </div>
         </div>
-        <div class="description">Giới thiệu</div>
-        
+        <div class="description">
+            <div class="description__title">
+                <h2>Giới thiệu MeTour</h2>
+            </div>
+            <div class="card-container">
+                <div class="card-container__card"></div>
+                <div class="card-container__card"></div>
+                <div class="card-container__card"></div>
+                <div class="card-container__card"></div>
+            </div>
+        </div>
     </main>
     <footer class="footer">
-        <div class="copyright">Copyright &copy; MeTour</div>
+        <div class="footer__copyright">Copyright &copy; MeTour</div>
     </footer>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

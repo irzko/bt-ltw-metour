@@ -5,14 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Material+Icons&display=block" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <title>MeTour</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/explore.css">
 </head>
 <body>
   <header class="header">
-    <a class="header__logo" href="home.html">MeTour</a>
-      <nav class="nav">
+    <div class="home">
+      <span class="home__menu material-symbols-rounded" onclick="navBar()">
+          menu
+          </span>
+      <a class="home__logo" href="home.html">MeTour</a>
+    </div>
+      <nav class="nav" id="nav-container">
         <a class="nav__item" href="home.html">Trang chủ</a>
         <a class="nav__item" href="explore.html">Khám phá</a>
         <a class="nav__item" href="#">Cộng đồng</a>
@@ -23,8 +29,8 @@
   <main>
     <div class="featured-posts">
       <div class="featured-posts__main">
-        <img class="main-img" src="assets/kinh-nghiem-du-lich-da-nang-8.jpg">
-        <h2 class="main-title">Cầu tình yêu vẫn đẹp lộng lẫy và khá đông vui lúc chiều tối</h2>
+        <img class="main-img" src="assets/dia-diem-ngam-hoang-hon-nha-trang-08_1635673540.jpg">
+        <h2 class="main-title">Tận hưởng hoàng hôn trên biển Đại Lãnh</h2>
       </div>
       <div class="featured-posts__sub">
         <div class="sub-post--1">
@@ -46,6 +52,9 @@
       </div>
     </div>
   </main>
-  <script src="scripts.js"></script>
+  <footer class="footer">
+    <div class="footer__copyright">Copyright &copy; MeTour</div>
+  </footer>
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>
