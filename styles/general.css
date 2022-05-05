@@ -5,10 +5,10 @@
 
 body {
     margin: 0;
-    /* background-color: whitesmoke; */
+    background-color: whitesmoke;
 }
 
-h2, h4 {
+h2, h4{
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
@@ -19,12 +19,13 @@ h2, h4 {
 
 .header {
     display: flex;
-    background-color: #f2f6fcec;
+    background-color: rgba(255, 255, 255, 0.74);
     justify-content: space-between;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1;
+    backdrop-filter: blur(5px);
     /* box-shadow: 0 2px 4px 0 #969696b1; */
 }
 
@@ -56,7 +57,7 @@ h2, h4 {
     display: flex;
 }
 
-.material-symbols-rounded {
+.home__menu {
     padding: 14px 14px;
     display: none;
 }
@@ -126,15 +127,19 @@ h2, h4 {
 
 
 .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     background-color: #fff;
-    border: 1px solid #443367;;
+    border: none;
+    
 
 }
 
 .btn:hover {
-    background-color: #443367;
     color: #fff;
+    background-color: #1ce3b5;
 }
 
 
