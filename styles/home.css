@@ -1,15 +1,6 @@
-/* main {
-    display: grid;
-    grid-template-areas:
-        'banner'
-        'des'
-        'footer';
-} */
-
 
 .banner {
     display: flex;
-    /* grid-area: banner; */
     flex-wrap: wrap;
     padding: 50px 0;
     justify-content: center;
@@ -41,6 +32,7 @@
     margin: 10px 0;
     font-size: 1.3rem;
     color: var(--text-color);
+    font-weight: 900;
     animation-name: fade;
     animation-duration: 2s;
     animation-fill-mode: forwards;
@@ -54,7 +46,8 @@
     animation-duration: 2s;
     animation-fill-mode: forwards;
     width: 150px;
-    height: 40px
+    height: 40px;
+    box-shadow: 5px 5px 10px rgb(196, 208, 237);
 }
 
 
@@ -69,18 +62,27 @@
     }
 }
 
-.description {  
+.description {
+    /* margin-top: 10px; */
     display: flex;
     background-color: #8a9ddd09;
     justify-content: center;
     align-items: center;
     flex-flow: column wrap;
     padding: 20px;
-    background: #fff;
+    /* background: #dbe7e8; */
+    background-image: linear-gradient(45deg,#e1c6ff , #dbe8e7);
 }
+
 
 .description__title {
     margin-top: 10px;
+}
+
+.description__title h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    color: rgb(146, 136, 185);
 }
 
 .card-container {
@@ -92,14 +94,14 @@
 
 .description-card {
     display: flex;
-    /* justify-content: space-between; */
     flex-direction: column;
     align-items: center;
     height: 250px;
     width: 250px;
-    /* background-color: rgba(255, 255, 255, 0.67); */
-    /* border: 1px solid rgb(0, 0, 0); */
-    box-shadow: 1px 1px 10px #0000004f;
+    backdrop-filter: blur(5px);
+    background: rgba(194, 169, 233, 0.492);
+    box-shadow: 5px 5px 20px #b563deb1;
+    border: solid 1px rgba(0, 0, 0, 0.07);
     margin: 20px;
     border-radius: 20px;
     padding: 10px;
@@ -109,12 +111,17 @@
     font-size: 5em;
     margin: 25px 0;
     font-weight: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 10px rgb(175, 44, 231);
 }
 
 .description-card__des {
     font-family: var(--font);
     text-align: center;
     margin: 25px 0;
+    color: rgb(107, 86, 113);
+    font-weight: 700;
+    /* text-shadow: 1px 1px 10px rgb(104, 207, 255); */
 }
 @media screen and (max-width: 800px) {
     .banner {

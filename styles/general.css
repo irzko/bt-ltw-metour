@@ -117,6 +117,7 @@ h2, h4{
     justify-content: center;
     height: 70px;
     align-items: center;
+    background: rgb(193, 169, 233);
 }
 
 .footer__copyright {
@@ -131,7 +132,7 @@ h2, h4{
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255);
     border: none;
     
 
@@ -139,7 +140,7 @@ h2, h4{
 
 .btn:hover {
     color: #fff;
-    background-color: #1ce3b5;
+    background-color: #e2a4ee;
 }
 
 
