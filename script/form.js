@@ -231,7 +231,7 @@ login = (data) => {
         localStorage.setItem('userLogged', JSON.stringify(user));
         window.open('./trangchu.html', '_self');
     } else {
-        alert("Thông tin không đúng!")
+        alert("Thông tin đăng nhập không chính xác!")
     }
 }
 
