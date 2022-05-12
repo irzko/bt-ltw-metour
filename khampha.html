@@ -1,0 +1,140 @@
+<!--
+Design by Nhom 5:
+  B1909924 - Tran Minh Kha (CSS, JavaScript)
+  B2012024 - Tran Thanh Kiep (HTML)
+-->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <!-- Using font Roboto -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./assets/icons/letter-m.png">
+  <title>MeTour</title>
+  <link rel="stylesheet" href="styles/chung.css">
+  <link rel="stylesheet" href="styles/khampha.css">
+</head>
+<body>
+  <header class="header">
+    <div class="home">
+      <span class="material-symbols-rounded home__menu" id="menu">menu</span>
+      <a class="home__logo" href="trangchu.html">MeTour</a>
+    </div>
+    <nav class="navbar nav" id="nav-container">
+      <a class="nav__item" href="trangchu.html">Trang chủ</a>
+      <a class="nav__item" href="khampha.html">Khám phá</a>
+      <a class="nav__item" href="congdong.html">Cộng đồng</a>
+      <a class="nav__item" href="#">Về chúng tôi</a>
+      <a class="nav__item" id="login" href="dangnhap.html">Đăng nhập</a>
+      <div class="dropdown">
+        <div class="dropbtn nav__item" id="user">
+      </div>
+      <div class="dropdown-content">
+        <a class="nav__item" href="#" id="logout">Đăng xuất</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2 class="title featured__title">Địa điểm nổi bật</h2>
+    <div class="card featured-posts__main">
+      <img class="main-img" src="assets/dia-diem-ngam-hoang-hon-nha-trang-08_1635673540.jpg">
+      <a href="./post/tan-huong-hoang-hon-tren-bien-dai-lanh.html" class="main-title">Ngất ngây vẻ đẹp biển Đại Lãnh - nơi giao thoa đất trời</a>
+      <p>Đại Lãnh là điểm đến để ngắm biển Nha Trang hoàng hôn siêu lãng mạn. Biển Đại Lãnh được trang du lịch nổi tiếng Touropia của Mỹ bình chọn là 1 trong 10 bãi biển đẹp nhất Việt Nam. Bãi biển có bờ cát trắng trải dài và đáy biển có độ thoải lớn, cực hợp để bạn tản bộ, đón từng ngọn gió mát lạnh.</p>
+    </div>
+    <div class="featured-posts__sub">
+      <div class="card sub-post--1">
+        <img class="sub-post__img" src="assets/diem-du-lich-9_1632662759.jpg">
+        <div class="sub-info">
+          <h4 class="sub-info__title">Bình minh tuyệt đẹp tại Hòn Chồng Nha Trang</h4>
+          <p>Hòn Chồng Hòn Vợ Nha Trang là địa danh gắn với câu chuyện tình yêu cảm động của hai vợ chồng người dân làng chài. Với các bãi đá tự nhiên trải dài, Hòn Chồng Hòn Vợ là địa điểm check-in cực đẹp.</p>
+        </div>
+      </div>
+      <div class="card sub-post--1">
+        <img class="sub-post__img" src="assets/diem-du-lich_1648301729.jpg">
+        <div class="sub-info">
+          <h4 class="sub-info__title">Vui chơi thả ga cùng bạn bè trong VinWonders Nha Trang</h4>
+          <p>Là một trong 29 vịnh biển đẹp nhất thế giới, Nha Trang nổi tiếng với  thiên đường vui chơi giải trí “Disneyland của Việt Nam”, VinWonders Nha Trang luôn được các tín đồ xê dịch săn đón trải nghiệm. Cùng bắt đầu chuyến du lịch Nha Trang đến VinWonders ngay nào!</p>
+        </div>
+      </div>
+      <div class="card sub-post--1">
+        <img class="sub-post__img" src="assets/dia-diem-du-lich-nha-trang-5.jpg">
+        <div class="sub-info">
+          <h4 class="sub-info__title">Con đường Trần Phú Nha Trang</h4>
+          <p>Đường Trần Phú Nha Trang là cung đường ven biển ôm trọn thành phố, đi qua nhiều địa danh nổi tiếng. Những điều thú vị của con đường không ngủ này sẽ mang đến cho du khách nhiều kỷ niệm khó quên.</p>
+        </div>
+      </div>
+    </div>
+    <div class="fea-bottom">
+      <div class="card bottom-card">
+        <img class="bottom-card__img" src="assets/di-lịch-hoi-an-hinh-anh27.jpg">
+        <div class="bottom-card__info">
+          <h4 class="card__title">Phố cổ Hội An</h4>
+          <p>Du lịch phố cổ Hội An, bạn không chỉ được khám phá những giá trị văn hóa qua những kiến trúc hoài cổ, những hoạt động nghệ thuật dân gian hay những cảnh quan thiên nhiên thơ mộng mà còn được thưởng thức những món ăn đặc sản “hài lòng khách đến, vừa lòng khách đi”. Bỏ túi ngay từ A - Z các điểm đến, ăn ở, đi lại và kinh nghiệm du lịch phố cổ Hội An đầy đủ nhất chuyến đi của bạn được thuận lợi và trọn vẹn nhé!</p>
+        </div>
+      </div>
+      <div class="card bottom-card">
+        <img class="bottom-card__img" src="assets/bai-ong-cu-lao-cham-2_1645954203.jpg">
+        <div class="bottom-card__info">
+          <h4 class="card__title">Khám phá bãi Ông Cù Lao Chàm</h4>
+          <p>Bãi Ông Cù Lao Chàm là bãi biển lớn nhất, cảnh quan đẹp nhất và có dịch vụ du lịch phát triển nhất so với các bãi biển khác thuộc cụm đảo Cù Lao Chàm. Bài viết dưới đây sẽ gợi ý cho bạn những kinh nghiệm du lịch bãi Ông hữu ích để bạn tự tin khám phá trong chuyến đi sắp tới.</p>
+        </div>
+      </div>
+      <div class="card bottom-card">
+        <img class="bottom-card__img" src="assets/dia-diem-du-lich-da-nang-31_1631866506.jpg">
+        <div class="bottom-card__info">
+          <h4 class="card__title">Bà Nà Hills</h4>
+          <p>Bà Nà Hills là top những địa điểm du lịch ở Đà Nẵng nhất định phải ghé. Nơi đây được xem là một trong những khu du lịch hàng đầu Việt Nam với nhiều điểm vui chơi, tham quan, ăn uống, chụp hình hấp dẫn. Đến đây, du khách sẽ được trải nghiệm những chuyến cáp treo dài, tận hưởng không khí mát lành cùng cảnh quan tuyệt sắc, đắm chìm trong không khí lễ hội sôi động bất tận. </p>
+        </div>
+      </div>
+      <div class="card bottom-card">
+        <img class="bottom-card__img" src="assets/dia-diem-du-lich-da-nang-35_1631867538.jpg">
+        <div class="bottom-card__info">
+          <h4 class="card__title">Asia Park Đà Nẵng</h4>
+          <p>Được mệnh danh là công viên của những kỷ lục, Asia Park là địa điểm chơi Đà Nẵng hấp dẫn với nhiều trò chơi mạo hiểm thú vị. Nếu bạn thắc mắc Đà Nẵng có gì chơi, thì nơi đây sẽ trả lời cho bạn. Asia Park là tổ hợp vui chơi giải trí hàng đầu khu vực miền Trung.</p>
+        </div>
+      </div>
+    </div>
+    <h2 class="title suggest__title">Gợi ý cho bạn</h2>
+    <div class="suggest-container">
+      <div class="card sg-card">
+        <img class="sg-card__img" src="assets/dia_diem_du_lich_quan_ba_ha_giang_1.jpg">
+        <div class="sg-card__info">
+          <h4 class="sg-card__title">Khám phá miền Đông Bắc Tổ quốc với các địa điểm du lịch Quản Bạ Hà Giang nổi tiếng</h4>
+          <p>Đến với mảnh đất Đông Bắc thơ mộng, hoang sơ nhất định đừng quên khám phá các địa điểm du lịch Quản Bạ Hà Giang danh tiếng để hành trình vi vu của bạn trở nên hấp dẫn hơn nhé.</p>
+        </div>
+      </div>
+      <div class="card sg-card">
+        <img class="sg-card__img" src="assets/khu_du_lich_gan_sai_gon__1.jpg">
+        <div class="sg-card__info">
+          <h4 class="sg-card__title">’Quẩy hết mình’ trong mùa hè này với danh sách các khu du lịch gần Sài Gòn cực hot</h4>
+          <p>“Chỉ mặt điểm tên” những khu du lịch gần Sài Gòn hứa hẹn mang đến nhiều gợi ý mới mẻ, hấp dẫn dành cho du khách đang lên kế hoạch khám phá, trải nghiệm tại khu vực phía Nam trong mùa hè này.</p>
+        </div>
+      </div>
+      <div class="card sg-card">
+        <img class="sg-card__img" src="assets/dia_diem_song_ao_o_da_lat_1.jpg">
+        <div class="sg-card__info">
+          <h4 class="sg-card__title">Rong ruổi tìm an yên cho những ngày mệt nhoài tại các địa điểm sống ảo ở Đà Lạt</h4>
+          <p>Tận hưởng những khoảnh khắc thảnh thơi, an yên trong chuyến du lịch trải nghiệm tại các địa điểm sống ảo ở Đà Lạt sở hữu khung cảnh thanh bình, thơ mộng.</p>
+        </div>
+      </div>
+      <div class="card sg-card">
+        <img class="sg-card__img" src="assets/dia_diem_du_lich_o_binh_lieu_1.jpg">
+        <div class="sg-card__info">
+          <h4 class="sg-card__title">‘Ta dại ta tìm nơi vắng vẻ’ để check-in với những địa điểm du lịch ở Bình Liêu thơ mộng</h4>
+          <p>Nếu đã quá quen mặt với các tọa độ du lịch đông đúc, sầm uất tại khu vực phía Bắc thì du khách thập phương có thể “đổi gió” với trải nghiệm khám phá những địa điểm du lịch ở Bình Liêu hoang sơ, thơ mộng.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__copyright">Copyright &copy; MeTour</div>
+  </footer>
+  <script type="text/javascript" src="./script/scripts.js"></script>
+  <script type="text/javascript" src="./script/login.js"></script>
+</body>
+</html>

@@ -1,11 +1,21 @@
 :root {
-    --text-color: #425066;
+    --text-color: #091434;
     --font: 'Roboto', sans-serif;
+    --primary30: #4F378B;
+    --primary80: #D0BCFF;
+    --primary90: #EADDFF;
+    --green-10: #3c7363;
+    --green-20: #8fd9c4;
+    --green-30: #B8D9C4;
+    --green-40: #84d9ba;
+    --green-50: #e8f1fd;
+    --blue: #b6d6f2;
+    --pink: #e8c4f2;
 }
 
 body {
     margin: 0;
-    background-color: whitesmoke;
+    background-color: #F5EFE6;
 }
 
 h2, h4{
@@ -17,6 +27,7 @@ h2, h4{
     color: var(--text-color);
 }
 
+
 .header {
     display: flex;
     background-color: rgba(255, 255, 255, 0.74);
@@ -26,7 +37,6 @@ h2, h4{
     width: 100%;
     z-index: 1;
     backdrop-filter: blur(5px);
-    /* box-shadow: 0 2px 4px 0 #969696b1; */
 }
 
 
@@ -39,18 +49,16 @@ h2, h4{
 
 .nav__item {
   text-decoration: none;
-  color: #6b6b6b;
+  color: var(--text-color);
   padding: 14px 0;
   border-bottom: 3px solid transparent;
   
 }
 
 
-
-
 .nav__item:hover {
-    color: #916fd4;
-    border-bottom: 3px solid #916fd4;
+    color: var(--primary30);
+    border-bottom: 3px solid var(--primary30);
 }
 
 .home {
@@ -60,11 +68,12 @@ h2, h4{
 .home__menu {
     padding: 14px 14px;
     display: none;
+    cursor: pointer;
 }
 
 .home__logo {
     font-size: 26px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font);
     margin-left: 25px;
     font-weight: 800;
     color: #443367;
@@ -82,12 +91,12 @@ h2, h4{
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 739px) {
     .nav__item {display: none;}
     .material-symbols-rounded {display: block;}
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 739px) {
     .nav.responsive {
         display: flex;
         flex-direction: column;
@@ -113,11 +122,9 @@ h2, h4{
 
 .footer {
     display: flex;
-    /* grid-area: footer; */
     justify-content: center;
     height: 70px;
     align-items: center;
-    background: rgb(193, 169, 233);
 }
 
 .footer__copyright {
@@ -139,10 +146,49 @@ h2, h4{
 }
 
 .btn:hover {
-    color: #fff;
-    background-color: #e2a4ee;
+    color: var(--primary90);
+    background: var(--primary30);
 }
 
 
+  
+.dropdown-content {
+    display: none;
+    justify-content: center;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    right: 0;
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+    padding: 10px;
+}
+
+.dropdown-content a {
+    float: none;
+    padding: 10px 0;
+    margin: 10px;
+    display: block;
+    margin: 0;
+    
+}
 
 
+.dropdown-content a:hover {
+    border-bottom: 3px solid transparent;
+    color: red;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+    justify-content: center;
+}
+
+.invalid {
+    color: red;
+}
+
+#user {
+    display: inline-block;
+}

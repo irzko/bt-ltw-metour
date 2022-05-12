@@ -1,0 +1,73 @@
+<!--
+Design by Nhom 5:
+  B1909924 - Tran Minh Kha (CSS, JavaScript)
+  B2012024 - Tran Thanh Kiep (HTML)
+-->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,300,0,0" />
+    <!-- Using font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./assets/icons/letter-m.png">
+    <title>MeTour</title>
+    <link rel="stylesheet" href="./styles/chung.css">
+    <link rel="stylesheet" href="./styles/congdong.css">
+</head>
+<body>
+    <header class="header">
+        <div class="home">
+            <span class="material-symbols-rounded home__menu" id="menu">menu</span>
+            <a class="home__logo" href="trangchu.html">MeTour</a>
+        </div>
+        <nav class="navbar nav" id="nav-container">
+            <a class="nav__item" href="trangchu.html">Trang chủ</a>
+            <a class="nav__item" href="khampha.html">Khám phá</a>
+            <a class="nav__item" href="congdong.html">Cộng đồng</a>
+            <a class="nav__item" href="#">Về chúng tôi</a>
+            <a class="nav__item" id="login" href="dangnhap.html">Đăng nhập</a>
+            <div class="dropdown">
+                <div class="dropbtn nav__item" id="user">
+            </div>
+            <div class="dropdown-content">
+                <a class="nav__item" href="#" id="logout">Đăng xuất</a>
+            </div>
+            </nav>
+    </header>
+    <main>
+        <div id="container">
+            <div class="new-post">
+                <img class="avatar" src="./assets/congdong/avatar.png">
+                <div class="new-post__status" id="open-create-post">Bạn đang nghĩ gì thế?</div>
+            </div>
+            <h2 class="newsfeed-title">Newsfeed</h2>
+        </div>
+    </main>
+    <div class="overlay" id="new">
+        <form action="" method="POST" class="form create-post" id="post-form">
+            <div class="create-post__header">
+                <h3>Tạo bài viết</h3>
+                <span class="icon material-symbols-rounded" id="close-create-post">close</span>
+            </div>
+            <div id="info-user">
+                <img class="avatar" src="./assets/congdong/avatar.png">
+            </div>
+            <textarea name="caption" id="caption" rows="8" cols="10" wrap="soft" placeholder="Bạn đang nghĩ gì thế?"></textarea>
+            <input type="file" name="file" id="file" class="inputfile" disabled/>
+            <label for="file" disabled>Chọn ảnh</label>
+            <button class="form-submit">Đăng</button>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer__copyright">Copyright &copy; MeTour</div>
+    </footer>
+    <script type="text/javascript" src="./script/scripts.js"></script>
+    <script type="text/javascript" src="./script/login.js"></script>
+    <script type="text/javascript" src="./script/congdong.js"></script>
+</body>
+</html>

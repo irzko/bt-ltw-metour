@@ -1,0 +1,15 @@
+.post {
+    display: flex;
+    max-width: 800px;
+    margin: 100px auto 0;
+    flex-direction: column;
+}
+
+p {
+    font-family: var(--font);
+    font-size: 14px;
+}
+
+h3 {
+    font-family: var(--font);
+}
