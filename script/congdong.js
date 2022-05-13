@@ -20,18 +20,42 @@ loadPost = (user, caption, urlimg) => {
     postHeader.setAttribute("class", "post__header");
 
     
+    const user_container = document.createElement("div");
+    user_container.setAttribute("class","header__user")
+
     const avt = document.createElement("img");
-    avt.setAttribute("class", "avatar");
+    avt.setAttribute("class", "avatar user__avatar");
     avt.setAttribute("src", "./assets/congdong/avatar.png");
     avt.setAttribute("alt", "avatar");
-    postHeader.appendChild(avt);
+    user_container.appendChild(avt);
  
 
-    const usr = document.createElement("div");
-    usr.setAttribute("class", "header__username");
-    usr.innerText = user;
-    postHeader.appendChild(usr);
+    const usrname = document.createElement("div");
+    usrname.setAttribute("class", "user__name");
+    usrname.innerText = user;
+    user_container.appendChild(usrname);
 
+    postHeader.appendChild(user_container);
+
+    const options = document.createElement("div");
+    options.setAttribute("class", "options");
+
+
+    const drBtn = document.createElement("button");
+    drBtn.setAttribute("class", "drbtn");
+    drBtn.innerText = "...";
+    options.appendChild(drBtn);
+
+    const dropdownContent = document.createElement("div");
+    dropdownContent.setAttribute("class", "options-dropdown");
+
+    const item1 = document.createElement("div");
+    item1.setAttribute("class", "delete-post option__item");
+    item1.innerText = "Xoá bài viểt"
+    dropdownContent.appendChild(item1);
+
+    options.appendChild(dropdownContent);
+    postHeader.appendChild(options);
     post.appendChild(postHeader);
 
     const cap = document.createElement("div");
@@ -114,6 +138,8 @@ newPost = (post) => {
 }
 
 
+
+
 let formElement = document.querySelector("#post-form");
 
 if (formElement) {
@@ -163,3 +189,15 @@ document.getElementById("open-create-post").addEventListener("click", function()
         window.open("./dangnhap.html", "_self");
     }
 });
+
+const delBtn = document.getElementsByClassName('delete-post');
+for (let i = 0; i < delBtn.length - 2; i++) {
+    delBtn[i].addEventListener('click', function() {
+        let a = getpost.splice(delBtn.length - 3 - i, 1);
+        console.log(a);
+        localStorage.setItem("post", JSON.stringify(getpost));
+        window.location.reload();
+    })
+}
+
+

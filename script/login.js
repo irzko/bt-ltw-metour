@@ -23,4 +23,4 @@ loadUser = () => {
     }
 }
 
-loadUser();
+window.addEventListener("load", loadUser, false);
