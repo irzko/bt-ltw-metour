@@ -92,7 +92,7 @@ h2, h4{
 
 
 @media screen and (max-width: 739px) {
-    .nav__item {display: none;}
+    .nav__item, #user {display: none;}
     .material-symbols-rounded {display: block;}
 }
 
@@ -129,7 +129,6 @@ h2, h4{
 
 .footer__copyright {
     font-family: var(--font);
-    /* align-self: end; */
 }
 
 
@@ -154,22 +153,21 @@ h2, h4{
   
 .dropdown-content {
     display: none;
+    margin-top: 14px;
     justify-content: center;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 120px;
-    right: 0;
+    min-width: 100px;
     z-index: 1;
     border-radius: 0 0 10px 10px;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .dropdown-content a {
     float: none;
-    padding: 10px 0;
-    margin: 10px;
     display: block;
     margin: 0;
+    text-align: center;
     
 }
 
@@ -179,9 +177,8 @@ h2, h4{
     color: red;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
-    display: flex;
+    display: block;
     justify-content: center;
 }
 

@@ -1,3 +1,4 @@
+const loginItemnv = document.getElementById("login-itemnv");
 const navLogin = document.getElementById("login");
 const navUser = document.getElementById("user");
 const isLoggedIn = JSON.parse(localStorage.getItem('userLogged'));
@@ -19,7 +20,7 @@ loadUser = () => {
         navLogin.style.display = "none";
         navUser.innerText=isLoggedIn.fullname;
     } else {
-        navUser.style.display = "none";
+        loginItemnv.style.display = "none";
     }
 }
 
